@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .post-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .post:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .post-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .post-header h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .post-content {
+            margin-bottom: 10px;
+        }
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #777;
+            font-size: 14px;
+        }
+        .post-actions button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Red Social</h1>
+    </div>
+    
+    <div class="post-container">
+        <div class="post">
+            <div class="post-header">
+                <img src="profile-pic.jpg" alt="Perfil">
+                <h3>Usuario</h3>
+            </div>
+            <div class="post-content">
+                <p>¡Acabo de publicar mi primera foto en esta red social! 📷 #NuevaExperiencia</p>
+            </div>
+            <div class="post-actions">
+                <button>Me gusta</button>
+                <button>Comentar</button>
+            </div>
+        </div>
+        
+        <div class="post">
+            <div class="post-header">
+                <img src="friend-pic.jpg" alt="Perfil">
+                <h3>Amigo</h3>
+            </div>
+            <div class="post-content">
+                <p>Qué bonita foto, amigo! 😍</p>
+            </div>
+            <div class="post-actions">
+                <button>Me gusta</button>
+                <button>Comentar</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Derechos de autor © 2024 Red Social</p>
+    </footer>
+</body>
+</html>
