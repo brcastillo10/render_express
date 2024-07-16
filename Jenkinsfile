@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
+    tools{
+        nodejs "node"
+    }
+
     stages {
-        stage('Checkout') {
+        stage('Install') {
             steps {
-                git 'https://github.com/brcastillo10/render_express.git'
+                git branch: 'main', url: 'https://github.com/brcastillo10/render_express.git'
             }
         }
 
@@ -24,16 +28,10 @@ pipeline {
         stage('Test') {
             steps {
                 // Ejecuta los tests
-                sh 'npm test'
+                sh 'npm run test'
             }
         }
 
-        stage('Deploy') {
-            steps {
-                // Despliega el contenido a un servidor web o carpeta de despliegue
-                sh 'scp -r ./dist user@server:/path/to/deploy' // ejemplo de despliegue usando SCP
-            }
-        }
     }
 
     post {
